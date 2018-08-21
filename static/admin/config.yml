@@ -18,11 +18,11 @@ collections:
           widget: 'hidden',
           default: 'blog-post',
         }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Client', name: 'client', widget: 'string' }
-      - { label: 'Year', name: 'year', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'text' }
+      - { label: 'Client', name: 'client', widget: 'text' }
+      - { label: 'Year', name: 'year', widget: 'number' }
+      - { label: 'URL', name: 'url', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
 
   - name: 'pages'
