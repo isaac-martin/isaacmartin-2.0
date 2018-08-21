@@ -1,5 +1,6 @@
 backend:
-  name: imartin
+  name: github
+  repo: isaac-martin/isaacmartin-2.0
 
 media_folder: static/img
 public_folder: /img
