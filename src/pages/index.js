@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import Github from '../components/github'
 
 const IndexPage = () => (
   <Layout>
@@ -10,6 +11,7 @@ const IndexPage = () => (
     <p>Now go build something great.</p>
     <Link to="/projects/">Go to projects</Link>
     <Link to="/build/">Read about this build</Link>
+    <Github />
   </Layout>
 )
 
