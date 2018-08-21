@@ -33,17 +33,13 @@ class Github extends React.Component {
           }}
         >
           <h4>Currently Working On</h4>
-          <a
-            href={repo.clone_url}
-            rel="noopener noreferrer"
-            target="_blank"
+          <p
             style={{
-              display: 'block',
+              maxWidth: 370,
             }}
           >
-            {repo.name}
-          </a>
-          <p>{repo.description}</p>
+            {repo.description}
+          </p>
           <a
             href={repo.clone_url}
             rel="noopener noreferrer"
