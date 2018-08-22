@@ -1,29 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
 import Content, { HTMLContent } from '../components/Content'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import Github from '../components/github'
 
 export const IndexPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
     <Layout>
-      <section className="section">
+      <section className="section section--gradient">
         <div className="container">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
+                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                  {title}
+                </h2>
                 <PageContent className="content" content={content} />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <Github repo={'isaac-martin/rosemillk'} />
     </Layout>
   )
 }
@@ -35,13 +35,13 @@ IndexPageTemplate.propTypes = {
 }
 
 const IndexPage = ({ data }) => {
-  const { allMarkdownRemark } = data
+  const { markdownRemark: post } = data
 
   return (
     <IndexPageTemplate
       contentComponent={HTMLContent}
-      title={'home'}
-      content={allMarkdownRemark.edges[0].node.html}
+      title={post.frontmatter.title}
+      content={post.html}
     />
   )
 }
@@ -52,13 +52,12 @@ IndexPage.propTypes = {
 
 export default IndexPage
 
-export const indexQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(filter: { frontmatter: { title: { eq: "home" } } }) {
-      edges {
-        node {
-          html
-        }
+export const indexPageQuery = graphql`
+  query IndexPage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      html
+      frontmatter {
+        title
       }
     }
   }
