@@ -1,26 +1,14 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# Portfolio Site
+Static site generated with Gatsby, hosted on Netlify, netlifyCMS used to generate content.
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+## Commands
 
-## Install
-
-Make sure that you have the Gatsby CLI program installed:
+Develop, Live reload - build production
 ```sh
-npm install --global gatsby-cli
-```
-
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
-```
-
-Then you can run it by:
-```sh
-cd gatsby-example-site
+gatsby build
 gatsby develop
 ```
 
-## Deploy
+## Deployment
+Pushing to master will trigger a build on netlify. The build gives a temporary URL where it can be previewed before pushing out to the main url
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
