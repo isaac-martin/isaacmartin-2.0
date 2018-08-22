@@ -18,7 +18,9 @@ export const IndexPageTemplate = ({ title, content, contentComponent }) => {
             <div className="column is-10 is-offset-1">
               <div className="section">
                 <PageContent className="content" content={content} />
-                <Link to="/build">Building this site</Link>
+                <Link className="btn-primary shadow" to="/build">
+                  Building this site
+                </Link>
               </div>
             </div>
           </div>

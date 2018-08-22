@@ -5,3 +5,18 @@
 nav a {
   margin-right: 15px;
 }
+
+.btn-primary {
+  color: white;
+  border-radius: 5px;
+  padding: 20px 12px;
+  background: rebeccapurple;
+  text-decoration: none;
+  transform: translateY(15px);
+  display: inline-block;
+  transition: all 0.8s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(10px);
+}
