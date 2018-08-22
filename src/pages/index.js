@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Content, { HTMLContent } from '../components/Content'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Github from '../components/github'
@@ -18,6 +18,7 @@ export const IndexPageTemplate = ({ title, content, contentComponent }) => {
             <div className="column is-10 is-offset-1">
               <div className="section">
                 <PageContent className="content" content={content} />
+                <Link to="/build">Building this site</Link>
               </div>
             </div>
           </div>
