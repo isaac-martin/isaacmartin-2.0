@@ -11,6 +11,11 @@ class Github extends React.Component {
     this.setState({ ...repo })
   }
 
+  handleToggle = () => {
+    const { onToggle } = this.props
+    onToggle()
+  }
+
   render() {
     const repo = this.state
     return (
@@ -28,6 +33,17 @@ class Github extends React.Component {
           }}
         >
           <h4>Currently Working On</h4>
+          <span
+            style={{
+              position: 'absolute',
+              top: 15,
+              right: 15,
+              cursor: 'pointer',
+            }}
+            onClick={this.handleToggle}
+          >
+            X
+          </span>
           <p
             style={{
               maxWidth: 370,

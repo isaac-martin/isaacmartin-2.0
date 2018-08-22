@@ -7,28 +7,50 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 import Github from '../components/github'
 
-export const IndexPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
+class IndexPageTemplate extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      showGit: true,
+    }
+  }
 
-  return (
-    <Layout>
-      <section className="section">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="section">
-                <PageContent className="content" content={content} />
-                <Link className="btn-primary shadow" to="/build">
-                  Building this site
-                </Link>
+  handleToggleGit = () => {
+    console.log('trigged')
+    this.setState({ showGit: false })
+  }
+
+  render() {
+    const { content, contentComponent } = this.props
+    const showGit = this.state.showGit
+    const PageContent = contentComponent || Content
+    return (
+      <Layout>
+        <section className="section">
+          <div className="container">
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
+                <div className="section">
+                  <PageContent className="content" content={content} />
+                  <Link className="btn-primary shadow" to="/build">
+                    Building this site
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <Github repo={'isaac-martin/rosemillk'} />
-    </Layout>
-  )
+        </section>
+        {showGit ? (
+          <Github
+            onToggle={this.handleToggleGit}
+            repo={'isaac-martin/rosemillk'}
+          />
+        ) : (
+          ''
+        )}
+      </Layout>
+    )
+  }
 }
 
 IndexPageTemplate.propTypes = {
@@ -36,6 +58,8 @@ IndexPageTemplate.propTypes = {
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
+
+// export default IndexPageTemplate;
 
 const IndexPage = ({ data }) => {
   const { allMarkdownRemark } = data
