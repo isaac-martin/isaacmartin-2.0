@@ -39,3 +39,26 @@ nav a {
   margin-right: 10px;
   font-size: 14px;
 }
+
+p,
+ul,
+li {
+  font-size: 14px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* a:visited {
+  color: inherit;
+} */
