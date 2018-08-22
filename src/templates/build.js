@@ -4,6 +4,7 @@ import Content, { HTMLContent } from '../components/Content'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
+import GithubIssues from '../components/githubissues'
 
 export const BuildPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -19,6 +20,7 @@ export const BuildPageTemplate = ({ title, content, contentComponent }) => {
                   {title}
                 </h3>
                 <PageContent className="content" content={content} />
+                <GithubIssues repo="isaac-martin/isaacmartin-2.0" />
               </div>
             </div>
           </div>

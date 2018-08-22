@@ -21,15 +21,8 @@ const Footer = () => (
         >
           Github
         </a>
-        <span
-          style={{
-            marginRight: 15,
-          }}
-        >
-          isaac@weareplayground.co
-        </span>
+        <a href="mailto:isaac@weareplayground.co">isaac@weareplayground.co</a>
         <span>845 682 4584</span>
-        {/* <Link to="/build">Building this site</Link> */}
       </nav>
     </div>
   </div>
