@@ -12,4 +12,4 @@ Isaac Martin, Product Engineer NYC. Currently Senior Developer at [SMAKK Studios
 
 #### Exploring
 
-Recently I have been taking an interest in static site generators, particularly when paired with React & a CMS. This site is built in [Gatsby](https://www.gatsbyjs.org/), GraphQL & [NetlifyCMS](https://www.netlifycms.org/). I [wrote a little](/build) about my experience building this [version](https://github.com/isaac-martin/isaacmartin-2.0) and the roadmap for future iterations.
+Recently I have been taking an interest in static site generators, particularly when paired with React & a CMS. This site is built in [Gatsby](https://www.gatsbyjs.org/), GraphQL & [NetlifyCMS](https://www.netlifycms.org/). I wrote a little about my experience building this website using the JAM stack.
