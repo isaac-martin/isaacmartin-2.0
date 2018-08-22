@@ -29,7 +29,7 @@ For most of these tools I had only minor exposure to them — with the exception
 
 * I have loved using a more simple CMS then I am used to particularly when I have as much control as I have with NetlifyCMS.
 * A CMS was very much
- overkill for this. All it does is generate .md files
+ overkill for this. All it does is generate .md files, which with knowledge of how Gatsby compiles websites this could be done in VSCode
 * GraphQL is incredible. I was used to getting data from REST endpoints and its nice having a much smaller subset of data to traverse through.
 
 #### Whats Next?
