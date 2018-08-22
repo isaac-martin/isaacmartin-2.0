@@ -21,13 +21,11 @@ class Github extends React.Component {
     return (
       repo && (
         <div
-          className="shadow"
+          className="shadow gitBox"
           style={{
             margin: '0 auto',
             padding: '1rem',
             position: 'fixed',
-            right: 60,
-            bottom: 60,
             background: '#FFFDD0',
             borderRadius: 8,
           }}
