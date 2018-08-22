@@ -59,6 +59,6 @@ a {
   text-decoration: underline;
 }
 
-/* a:visited {
-  color: inherit;
-} */
+.layoutWrap {
+  min-height: calc(100vh - 250px);
+}

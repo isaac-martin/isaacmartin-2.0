@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const Header = ({ siteTitle }) => (
-  <div>
+const Header = () => (
+  <div className="header">
     <div
       style={{
-        margin: '0 auto',
+        margin: '30px auto 30px auto',
         maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
+        padding: '2rem 1.0875rem',
+        fontSize: '22px',
       }}
     >
       <nav style={{ margin: 0 }}>

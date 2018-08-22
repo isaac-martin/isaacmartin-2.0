@@ -33,10 +33,10 @@ const Layout = ({ children, data }) => (
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
+          className="layoutWrap"
           style={{
             margin: '0 auto',
             maxWidth: 960,
-            minHeight: '80vh',
             padding: '0px 1.0875rem 1.45rem',
             paddingTop: 0,
           }}
