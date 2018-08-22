@@ -42,7 +42,7 @@ class Github extends React.Component {
             }}
             onClick={this.handleToggle}
           >
-            X
+            &times;
           </span>
           <p
             style={{

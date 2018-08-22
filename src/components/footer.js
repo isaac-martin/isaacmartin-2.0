@@ -13,8 +13,14 @@ const Footer = () => (
       <nav className="footerNav" style={{ margin: 0 }}>
         <Link to="/">Home</Link>
         <Link to="/projects">Projects</Link>
-        <Link to="//github.com/isaac-martin">Build</Link>
-        <Link to="//github.com/isaac-martin">Github</Link>
+        <Link to="/build">Build</Link>
+        <a
+          href="//github.com/isaac-martin"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Github
+        </a>
         <span
           style={{
             marginRight: 15,
