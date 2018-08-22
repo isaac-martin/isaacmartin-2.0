@@ -26,9 +26,15 @@ nav a {
 }
 
 .single-proj {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+}
+
+@media only screen and (min-width: 1000px) {
+  .single-proj {
+    flex-direction: column;
+  }
+  .single-proj div {
+    margin-bottom: 10px;
+  }
 }
 
 .single-proj:first-child {
