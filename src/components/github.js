@@ -2,15 +2,10 @@ import React from 'react'
 
 // Make this come from Gatsby Config or CMS?
 class Github extends React.Component {
-  // constructor(props) {
-  //   super(props)
-  //   // this.state = { repo: [] }
-  // }
-
   async componentDidMount() {
-    let res = await fetch(
-        `https://api.github.com/repos/isaac-martin/rosemillk`
-      ),
+    const url = `https://api.github.com/repos/${this.props.repo}`
+    console.log(url)
+    let res = await fetch(url),
       json = await res.json(),
       repo = json || []
     this.setState({ ...repo })
