@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
@@ -15,31 +15,48 @@ export default class ProjectsPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">
-                Selected Projects
-              </h1>
+              <h3>Selected Projects</h3>
+              <p>
+                A selection of projects I have worked on over the last few
+                years. There is additional work that is not shown due to either
+                the product no longer being in production or legal reasons
+              </p>
             </div>
+
             {posts.map(({ node: post }) => (
               <div
                 className="content"
-                style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                style={{
+                  border: '1px solid #eaecee',
+                  padding: '1em 2em',
+                  marginBottom: 10,
+                }}
                 key={post.id}
               >
-                <p>
-                  <Link className="has-text-primary" to={post.fields.slug}>
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
-                </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-small" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
+                <div class="single-proj">
+                  <div>{post.frontmatter.title}</div>
+                  <div>
+                    <p>
+                      {post.frontmatter.year}
+                      <a
+                        className="is-small"
+                        href={post.frontmatter.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          marginLeft: '15px',
+                        }}
+                      >
+                        View Website →
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div className="tagList is-small">
+                  {post.frontmatter.tags.map(tag => (
+                    <span key={tag + `tag`}>{tag}</span>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
@@ -65,7 +82,6 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
           id
           fields {
             slug
@@ -73,6 +89,11 @@ export const pageQuery = graphql`
           frontmatter {
             title
             templateKey
+            year
+            description
+            url
+            client
+            tags
           }
         }
       }
