@@ -4,7 +4,6 @@ import React from 'react'
 class Github extends React.Component {
   async componentDidMount() {
     const url = `https://api.github.com/repos/${this.props.repo}`
-    console.log(url)
     let res = await fetch(url),
       json = await res.json(),
       repo = json || []

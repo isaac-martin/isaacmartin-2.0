@@ -46,8 +46,8 @@ class IndexPageTemplate extends React.Component {
             repo={'isaac-martin/rosemillk'}
           />
         ) : (
-          ''
-        )}
+            ''
+          )}
       </Layout>
     )
   }
