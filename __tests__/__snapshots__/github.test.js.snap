@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`github renders correctly 1`] = `
+<div
+  className="footer"
+>
+  <div
+    style={
+      Object {
+        "margin": "0 auto",
+        "maxWidth": 960,
+        "padding": "1.45rem 1.0875rem",
+      }
+    }
+  >
+    <nav
+      className="footerNav"
+      style={
+        Object {
+          "margin": 0,
+        }
+      }
+    >
+      <Link
+        to="/"
+      >
+        Home
+      </Link>
+      <Link
+        to="/projects"
+      >
+        Projects
+      </Link>
+      <Link
+        to="/build"
+      >
+        Build
+      </Link>
+      <a
+        href="//github.com/isaac-martin"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Github
+      </a>
+      <a
+        href="mailto:isaac@weareplayground.co"
+      >
+        isaac@weareplayground.co
+      </a>
+      <span>
+        845 682 4584
+      </span>
+    </nav>
+  </div>
+</div>
+`;

@@ -6,10 +6,9 @@ import Layout from './layout.js'
 
 const IndexPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
-
   return (
     <Layout>
-      <section className="section section--gradient">
+      <section className="section">
         <div className="container">
           <div className="columns">
             <div className="column is-10 is-offset-1">

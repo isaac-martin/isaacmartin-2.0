@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
+import ProjectList from '../components/projectList';
 
 export default class ProjectsPage extends React.Component {
   render() {
@@ -15,50 +16,19 @@ export default class ProjectsPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h3>Selected Projects</h3>
-              <p>
+              <h4>Selected Projects</h4>
+              <p
+                style={{
+                  marginBottom: 20,
+                }}
+              >
                 A selection of projects I have worked on over the last few
                 years. There is additional work that is not shown due to either
                 the product no longer being in production or legal reasons
               </p>
             </div>
 
-            {posts.map(({ node: post }) => (
-              <div
-                className="content"
-                style={{
-                  border: '1px solid #eaecee',
-                  padding: '1em 2em',
-                  marginBottom: 10,
-                }}
-                key={post.id}
-              >
-                <div class="single-proj">
-                  <div>{post.frontmatter.title}</div>
-                  <div>
-                    <p>
-                      {post.frontmatter.year}
-                      <a
-                        className="is-small"
-                        href={post.frontmatter.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                          marginLeft: '15px',
-                        }}
-                      >
-                        View Website →
-                      </a>
-                    </p>
-                  </div>
-                </div>
-                <div className="tagList is-small">
-                  {post.frontmatter.tags.map(tag => (
-                    <span key={tag + `tag`}>{tag}</span>
-                  ))}
-                </div>
-              </div>
-            ))}
+            <ProjectList posts={posts}></ProjectList>
           </div>
         </section>
       </Layout>
