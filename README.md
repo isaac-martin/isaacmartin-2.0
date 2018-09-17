@@ -6,7 +6,7 @@ Node / NPM (Gatsby supports versions of Node back to v6 and npm to v3. So whatev
 
 ## Getting Started
 Clone this repo  
-`yarn install` (or NPM) to get moddules installed
+`yarn install` (or NPM) to get moddules installed   
 ``gatsby develop`` will run local dev server with live reloading.   
 May need to authenticate if you need to view the CMS
 
