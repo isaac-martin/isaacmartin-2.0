@@ -2,7 +2,7 @@
 templateKey: build
 title: 'Building this website with Gatsby, React, NetlifyCMS + Netlify'
 ---
-As preparing to apply for a new role I needed to add some more recent projects to my website and remove some now defunct ones. The previous version of this site was built using Jekyll and I hadn't updated anything in over 12 months. I didn't have it cloned locally on my machine and to be honest I had kind of grown old of the design.
+The previous version of this site was built using Jekyll and I hadn't updated anything in over 12 months. I didn't have it cloned locally on my machine and to be honest I had out grown the design.
 I took this as a perfect excuse to rebuild. My goals for this product were
 
 * Rebuild in a short amount of time so I could package with the job application
@@ -29,7 +29,7 @@ For most of these tools I had only minor exposure to them — with the exception
 
 * I have loved using a more simple CMS then I am used to particularly when I have as much control as I have with NetlifyCMS.
 * A CMS was very much
- overkill for this. All it does is generate .md files, which with knowledge of how Gatsby compiles websites this could be done in VSCode
+  overkill for this. All it does is generate .md files, which with knowledge of how Gatsby compiles websites this could be done in VSCode
 * GraphQL is incredible. I was used to getting data from REST endpoints and its nice having a much smaller subset of data to traverse through.
 
 #### Whats Next?
