@@ -2,7 +2,7 @@
 templateKey: home
 title: home
 ---
-Isaac Martin, Product Engineer NYC. Currently Senior Developer at [SMAKK Studios](https://smkkstudios.com). Working across the front and backend utilizing tools / services including Wordpress, Javascript, React, Meteor.js, node.js, Shopify.
+Isaac Martin, Product Engineer NYC. Currently Senior Developer at [SMAKK Studios](https://smakkstudios.com). Working across the front and backend utilizing tools / services including Wordpress, Javascript, React, Meteor.js, node.js, Shopify.
 (845) 682 4584 <mailto:isaac@weareplayground.co>
 
 #### Products in Development
