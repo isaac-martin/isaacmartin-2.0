@@ -11,12 +11,11 @@ class IndexPageTemplate extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      showGit: true,
+      showGit: false,
     }
   }
 
   handleToggleGit = () => {
-    console.log('trigged')
     this.setState({ showGit: false })
   }
 
@@ -32,22 +31,22 @@ class IndexPageTemplate extends React.Component {
               <div className="column is-10 is-offset-1">
                 <div className="section">
                   <PageContent className="content" content={content} />
-                  <Link className="btn-primary shadow" to="/build">
+                  {/* <Link className="btn-primary shadow" to="/build">
                     Building this site
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
           </div>
         </section>
-        {showGit ? (
+        {/* {showGit ? (
           <Github
             onToggle={this.handleToggleGit}
             repo={'isaac-martin/rosemillk'}
           />
         ) : (
             ''
-          )}
+          )} */}
       </Layout>
     )
   }

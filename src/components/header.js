@@ -14,7 +14,6 @@ const Header = () => (
       <nav style={{ margin: 0 }}>
         <Link to="/">Home</Link>
         <Link to="/projects">Projects</Link>
-        <Link to="/build">Building this site</Link>
       </nav>
     </div>
   </div>

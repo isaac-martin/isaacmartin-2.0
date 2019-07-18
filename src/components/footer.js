@@ -13,7 +13,7 @@ const Footer = () => (
       <nav className="footerNav" style={{ margin: 0 }}>
         <Link to="/">Home</Link>
         <Link to="/projects">Projects</Link>
-        <Link to="/build">Build</Link>
+        {/* <Link to="/build">Build</Link> */}
         <a
           href="//github.com/isaac-martin"
           target="_blank"
@@ -22,7 +22,7 @@ const Footer = () => (
           Github
         </a>
         <a href="mailto:isaac@weareplayground.co">isaac@weareplayground.co</a>
-        <span>845 682 4584</span>
+        {/* <span>845 682 4584</span> */}
       </nav>
     </div>
   </div>
