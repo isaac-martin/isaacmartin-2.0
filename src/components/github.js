@@ -29,7 +29,7 @@ class Github extends React.Component {
             borderRadius: 8,
           }}
         >
-          <h4>Currently Working On</h4>
+          <h4>Currently Building</h4>
           <span
             style={{
               position: 'absolute',

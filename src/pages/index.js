@@ -11,7 +11,7 @@ class IndexPageTemplate extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      showGit: false,
+      showGit: true,
     }
   }
 
@@ -39,14 +39,14 @@ class IndexPageTemplate extends React.Component {
             </div>
           </div>
         </section>
-        {/* {showGit ? (
+        {showGit ? (
           <Github
             onToggle={this.handleToggleGit}
-            repo={'isaac-martin/rosemillk'}
+            repo={'isaac-martin/copy2context'}
           />
         ) : (
-            ''
-          )} */}
+          ''
+        )}
       </Layout>
     )
   }
