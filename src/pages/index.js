@@ -11,7 +11,7 @@ class IndexPageTemplate extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      showGit: true,
+      showGit: false,
     }
   }
 
