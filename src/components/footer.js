@@ -21,7 +21,7 @@ const Footer = () => (
         >
           Github
         </a>
-        <a href="mailto:isaac@weareplayground.co">isaac@weareplayground.co</a>
+        <a href="mailto:hey@isaacmartin.co">hey@isaacmartin.co</a>
         {/* <span>845 682 4584</span> */}
       </nav>
     </div>
